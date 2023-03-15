@@ -1,0 +1,129 @@
+#pokeball-1 {
+  width: 200px;
+  position: fixed;
+  top: -150px;
+  right: 50px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: intercambio-pokemon 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+#rayquaza {
+  width: 400px;
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: sabias-que 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.dos {
+  animation: vuela 4s linear infinite;
+}
+
+#pokeball-2 {
+  width: 200px;
+  position: fixed;
+  top: 760px;
+  left: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: intercambio-pokemon 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes intercambio-pokemon {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    top: 50%;
+    rotate: 360deg;
+  }
+}
+
+@keyframes sabias-que {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  /*background-color: black;*/
+  min-height: 500vh;
+  background-image: url("https://w0.peakpx.com/wallpaper/277/427/HD-wallpaper-cubone-pokemon-trees-dark.jpg");
+}
+
+#olas {
+  position: fixed;
+  bottom: 0;
+}
+
+.eye {
+  background-color: white;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin: 10px;
+}
+
+.eyes {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+display: flex;
+}
+.iris {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+}
+.shine{
+    margin: 0px;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
