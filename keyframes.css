@@ -26,6 +26,7 @@
   0% {
     opacity: 0;
     width: 20px;
+    top: 10%;
   }
 
   90% {
@@ -33,7 +34,7 @@
   }
 
   100% {
-    top: 50%;
+    top: 30%;
     rotate: 360deg;
   }
 }
@@ -81,5 +82,24 @@
   }
   100% {
     bottom: -500px;
+  }
+}
+
+@keyframes ciclodia {
+  0% {
+    background-color: black;
+  }
+
+  25% {
+    background-color: lightblue;
+  }
+  50% {
+    background-color: orange;
+  }
+  75% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: white;
   }
 }
