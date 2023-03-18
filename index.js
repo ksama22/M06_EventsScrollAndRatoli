@@ -30,10 +30,17 @@ function getPositionWave(e) {
 }
 */
 
+
+function hundete(){
+    let mibarco = document.getElementById("barco");
+    mibarco.style.animation = "titanic 6s"
+    mibarco.style.animationFillMode = "forwards"
+
+}
 function moveEyes(e) {
     let x = e.clientX;
     let y = e.clientY;
-    
+
     //Agafa el valor de
     //let eye = document.getElementsByClassName("eye")[0];
     //let minEye = window.getComputedStyle(eye).width;
@@ -42,10 +49,18 @@ function moveEyes(e) {
     let calcY = y * minEye / window.innerHeight;
     let calcX = x * minEye / window.innerWidth;
 
-    document.getElementsByClassName("iris")[0].style.top = parseInt(calcY)+"px";
-    document.getElementsByClassName("iris")[1].style.top = parseInt(calcY)+"px";
-    document.getElementsByClassName("iris")[0].style.left = parseInt(calcX)+"px";
-    document.getElementsByClassName("iris")[1].style.left = parseInt(calcX)+"px";
+    /*document.getElementsByClassName("iris")[0].style.top = parseInt(calcY) + "px";
+    document.getElementsByClassName("iris")[1].style.top = parseInt(calcY) + "px";
+    document.getElementsByClassName("iris")[0].style.left = parseInt(calcX) + "px";
+    document.getElementsByClassName("iris")[1].style.left = parseInt(calcX) + "px";
+*/
+    for (let i = 0; i < document.getElementsByClassName("iris").length; i++) {
+        const element = document.getElementsByClassName("iris")[i];
+        element.style.top = parseInt(calcY) + "px";
+        element.style.left = parseInt(calcX) + "px";
+
+    }
+
 
 }
 /*function mvImg(e) {
@@ -55,3 +70,7 @@ function moveEyes(e) {
     this.style.backgroundPositionY = valueY + "px"
 }
 */
+
+
+
+window.onblur = function () { console.log('blur'); }

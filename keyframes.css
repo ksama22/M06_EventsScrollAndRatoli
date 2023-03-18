@@ -1,0 +1,85 @@
+@keyframes memareo {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 1deg;
+  }
+  75% {
+    rotate: -1deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes intercambio-pokemon {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    top: 50%;
+    rotate: 360deg;
+  }
+}
+
+@keyframes oleaje {
+  0% {
+    bottom: -20px;
+    left: 0px;
+  }
+  25% {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  50% {
+    bottom: 20px;
+    left: -20px;
+  }
+
+  50% {
+    bottom: -20px;
+    left: -20px;
+  }
+  100% {
+    bottom: -20px;
+    left: 0px;
+  }
+}
+
+@keyframes miraporahi {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 40px;
+  }
+}
+
+@keyframes titanic {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 10deg;
+  }
+  100% {
+    bottom: -500px;
+  }
+}
