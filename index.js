@@ -31,10 +31,14 @@ function getPositionWave(e) {
 */
 
 
-function hundete(){
+function hundete() {
     let mibarco = document.getElementById("barco");
+    let kraken = document.getElementById("kraken");
     mibarco.style.animation = "titanic 6s"
+    mibarco.style.animationDelay = "2s"
     mibarco.style.animationFillMode = "forwards"
+    kraken.style.animation = "kraken 5s"
+    document.title = "D.E.P Barquito";
 
 }
 function moveEyes(e) {

@@ -39,6 +39,13 @@
   animation: memareo 2s infinite linear;
 }
 
+#kraken{
+    position: relative;
+    right: -30px;
+    bottom: -20px;
+    z-index: -1;
+}
+
 body {
   /*background-color: black;*/
   min-height: 500vh;
